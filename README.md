@@ -182,7 +182,7 @@ El diagrama de fase muestra los puntos de equilibrio en \( P=0, P=1, P=2 \).
 - \( P=1 \) es **inestable**.  
 
 <p align="center">
-  <img src="img/fase.png" alt="Diagrama de fase" width="400"/>
+  <img src="fase.png" alt="Diagrama de fase" width="400"/>
 </p>
 
 ---
@@ -192,7 +192,7 @@ El diagrama de fase muestra los puntos de equilibrio en \( P=0, P=1, P=2 \).
 La población decrece y se estabiliza en **2000 ejemplares**.
 
 <p align="center">
-  <img src="img/poblacion_3000.png" alt="Población inicial 3000" width="400"/>
+  <img src="poblacion_3000.png" alt="Población inicial 3000" width="400"/>
 </p>
 
 ---
@@ -202,7 +202,7 @@ La población decrece y se estabiliza en **2000 ejemplares**.
 La población crece y se estabiliza en **2000 ejemplares**.
 
 <p align="center">
-  <img src="img/poblacion_1500.png" alt="Población inicial 1500" width="400"/>
+  <img src="poblacion_1500.png" alt="Población inicial 1500" width="400"/>
 </p>
 
 ---
@@ -212,7 +212,7 @@ La población crece y se estabiliza en **2000 ejemplares**.
 La población decrece hasta la **extinción**.
 
 <p align="center">
-  <img src="img/poblacion_500.png" alt="Población inicial 500" width="400"/>
+  <img src="poblacion_500.png" alt="Población inicial 500" width="400"/>
 </p>
 
 ---
@@ -223,7 +223,7 @@ La población está por debajo del umbral crítico \( P=1 \).
 No puede crecer hasta 1100, en cambio tiende a **0 ejemplares**.
 
 <p align="center">
-  <img src="img/poblacion_900.png" alt="Población inicial 900" width="400"/>
+  <img src="poblacion_900.png" alt="Población inicial 900" width="400"/>
 </p>
 
 ```python
