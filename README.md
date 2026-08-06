@@ -31,31 +31,30 @@ Usando un asistente computacional, se graficaron los campos de pendientes y las 
 
 ## b) \( y' = x + y, \; y(-2)=2 \)
 
-![b) y' = x + y](b)_y'_=_x_+_y.png)
-
+![Gráfica ejercicio 1. b](Grafica-b.jpeg)
 ---
 
 ## c) \( y' = -x^2 + \sin(y) \)
 
-![c) y' = -x^2 + sin(y](c)_y'_=-x^2_+_sin(y).png)
+![Gráfica ejercicio 1. c](Grafica-c.jpeg)
 
 ---
 
 ## d) \( (x^2+1)y' + 3xy = 6x \)
 
-![d) y' = (6x - 3xy)/(x^2+1)](d)_y'_=(6x_-_3xy)/(x^2+1).png)
+![Gráfica ejercicio 1. d](Grafica-d.jpeg)
 
 ---
 
 ## e) \( y' = x e^y \)
 
-![e) y' = x e^y](e)_y'_=_x_e^y.png)
+![Gráfica ejercicio 1. e](Grafica-e.jpeg)
 
 ---
 
 ## f) \( y' = x - y, \; y(1)=1 \)
 
-![f) y' = x - y](f)_y'_=_x_-_y.png)
+![Gráfica ejercicio 1. e](Grafica-e.jpeg)
 
 ```python
 import numpy as np
