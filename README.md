@@ -15,8 +15,7 @@
 
 # Guía de trabajo 1: Campo de pendientes
 
-## Ejercicio 1a
-Ecuación diferencial: y' = -y - sin(x), con y(0)=1
+## Ejercicio 1
 
 ```python
 import numpy as np
@@ -48,6 +47,74 @@ plt.plot(sol.t, sol.y[0], 'r', label="Solución particular y(0)=1")
 plt.legend()
 plt.show()
 ```
+
+# Punto 3 - Modelo Poblacional
+
+Sea \( P(t) \) la población de cierta especie en un parque natural, con \( t \) tiempo en años y \( P \) en miles.  
+La ecuación diferencial:
+
+
+
+\[
+\frac{dP}{dt} = P(P - 1)(2 - P)
+\]
+
+
+
+describe la tasa de cambio de la población de la especie en el instante \( t \).
+
+---
+
+## a) Diagrama de fase
+
+El diagrama de fase muestra los puntos de equilibrio en \( P=0, P=1, P=2 \).  
+- \( P=0 \) y \( P=2 \) son **estables**.  
+- \( P=1 \) es **inestable**.  
+
+![Diagrama de fase](fase.png)
+
+---
+
+## b) Población inicial de 3000 ejemplares
+
+La población decrece y se estabiliza en **2000 ejemplares**.
+
+![Población inicial 3000](poblacion_3000.png)
+
+---
+
+## c) Población inicial de 1500 ejemplares
+
+La población crece y se estabiliza en **2000 ejemplares**.
+
+![Población inicial 1500](poblacion_1500.png)
+
+---
+
+## d) Población inicial de 500 ejemplares
+
+La población decrece hasta la **extinción**.
+
+![Población inicial 500](poblacion_500.png)
+
+---
+
+## e) Población inicial de 900 ejemplares
+
+La población está por debajo del umbral crítico \( P=1 \).  
+No puede crecer hasta 1100, en cambio tiende a **0 ejemplares**.
+
+![Población inicial 900](poblacion_900.png)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+def dP_dt(t, P):
+    return P * (P - 1) * (2 - P)
+
+# ... resto del código en punto3.py ...
 
 
 ```python
