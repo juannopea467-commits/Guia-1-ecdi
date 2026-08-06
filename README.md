@@ -24,7 +24,8 @@ Usando un asistente computacional, se graficaron los campos de pendientes y las 
 
 ## a) \( y' = -y - \sin(x), \; y(0)=1 \)
 
-Grafica-a.jpeg
+![Gráfica ejercicio 1. a](Grafica-a.jpeg)
+
 
 ---
 
