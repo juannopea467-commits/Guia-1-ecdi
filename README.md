@@ -24,37 +24,53 @@ Usando un asistente computacional, se graficaron los campos de pendientes y las 
 
 ## a) \( y' = -y - \sin(x), \; y(0)=1 \)
 
-![Gráfica ejercicio 1. a](Grafica-a.jpeg)
-
+<p align="center">
+  <img src="Grafica-a.jpeg" alt="Gráfica ejercicio 1-a" width="400"/>
+</p>
 
 ---
 
 ## b) \( y' = x + y, \; y(-2)=2 \)
 
-![Gráfica ejercicio 1. b](Grafica-b.jpeg)
+<p align="center">
+  <img src="Grafica-b.jpeg" alt="Gráfica ejercicio 1-b" width="400"/>
+</p>
+
 ---
 
 ## c) \( y' = -x^2 + \sin(y) \)
 
-![Gráfica ejercicio 1. c](Grafica-c.jpeg)
+<p align="center">
+  <img src="Grafica-c.jpeg" alt="Gráfica ejercicio 1-c" width="400"/>
+</p>
+
 
 ---
 
 ## d) \( (x^2+1)y' + 3xy = 6x \)
 
-![Gráfica ejercicio 1. d](Grafica-d.jpeg)
+
+<p align="center">
+  <img src="Grafica-d.jpeg" alt="Gráfica ejercicio 1-d" width="400"/>
+</p>
 
 ---
 
 ## e) \( y' = x e^y \)
 
-![Gráfica ejercicio 1. e](Grafica-e.jpeg)
+<p align="center">
+  <img src="Grafica-e.jpeg" alt="Gráfica ejercicio 1-e" width="400"/>
+</p>
 
 ---
 
 ## f) \( y' = x - y, \; y(1)=1 \)
 
-![Gráfica ejercicio 1. e](Grafica-e.jpeg)
+
+<p align="center">
+  <img src="Grafica-f.jpeg" alt="Gráfica ejercicio 1-f" width="400"/>
+</p>
+
 
 ```python
 import numpy as np
