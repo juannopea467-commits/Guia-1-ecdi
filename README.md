@@ -1,6 +1,8 @@
 <div style="text-align:center; font-family:Arial;">
 
-  <img src="https://www.escuelaing.edu.co/assets/uploads/image/logo-ecijg.png" alt="Logo Julio Garavito" height="120">
+  <p align="center">
+    <img src="Logo-Escuela-Ingeniería.png" alt="Logo Escuela de Ingeniería" width="150"/>
+  </p>
 
   <h2>ESCUELA COLOMBIANA DE INGENIERÍA JULIO GARAVITO</h2>
   <h3>UNIVERSIDAD</h3>
