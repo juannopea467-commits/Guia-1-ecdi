@@ -1,7 +1,7 @@
 <div style="text-align:center; font-family:Arial;">
 
   <p align="center">
-    <img src="Logo-Escuela-Ingeniería.png" alt="Logo Escuela de Ingeniería" width="150"/>
+    <img src="Logo-Escuela-ingeniería.png" alt="Logo Escuela de Ingeniería" width="150"/>
   </p>
 
   <h2>ESCUELA COLOMBIANA DE INGENIERÍA JULIO GARAVITO</h2>
@@ -10,10 +10,11 @@
 
   <h3>Departamento de Matemáticas</h3>
   <h2>Guía de trabajo 1: Campo de pendientes</h2>
-  <p><strong>Competencias:</strong> R2, RM2, CM2, SP2, C3 – 2026</p>
+  <p><strong>Competencias:</strong> R2, RM2, CM2, SP2, C3 - 2026</p>
   <p><strong>Integrante:</strong> Juan Miguel Nope Ascencio</p>
 
 </div>
+
 
 # Guía de trabajo 1: Campo de pendientes
 
