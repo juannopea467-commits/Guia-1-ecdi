@@ -174,7 +174,6 @@ La ecuación diferencial:
 
 describe la tasa de cambio de la población de la especie en el instante \( t \).
 
----
 
 ## a) Diagrama de fase
 
@@ -182,7 +181,9 @@ El diagrama de fase muestra los puntos de equilibrio en \( P=0, P=1, P=2 \).
 - \( P=0 \) y \( P=2 \) son **estables**.  
 - \( P=1 \) es **inestable**.  
 
-![Diagrama de fase](fase.png)
+<p align="center">
+  <img src="img/fase.png" alt="Diagrama de fase" width="400"/>
+</p>
 
 ---
 
@@ -190,7 +191,9 @@ El diagrama de fase muestra los puntos de equilibrio en \( P=0, P=1, P=2 \).
 
 La población decrece y se estabiliza en **2000 ejemplares**.
 
-![Población inicial 3000](poblacion_3000.png)
+<p align="center">
+  <img src="img/poblacion_3000.png" alt="Población inicial 3000" width="400"/>
+</p>
 
 ---
 
@@ -198,7 +201,9 @@ La población decrece y se estabiliza en **2000 ejemplares**.
 
 La población crece y se estabiliza en **2000 ejemplares**.
 
-![Población inicial 1500](poblacion_1500.png)
+<p align="center">
+  <img src="img/poblacion_1500.png" alt="Población inicial 1500" width="400"/>
+</p>
 
 ---
 
@@ -206,7 +211,9 @@ La población crece y se estabiliza en **2000 ejemplares**.
 
 La población decrece hasta la **extinción**.
 
-![Población inicial 500](poblacion_500.png)
+<p align="center">
+  <img src="img/poblacion_500.png" alt="Población inicial 500" width="400"/>
+</p>
 
 ---
 
@@ -215,8 +222,9 @@ La población decrece hasta la **extinción**.
 La población está por debajo del umbral crítico \( P=1 \).  
 No puede crecer hasta 1100, en cambio tiende a **0 ejemplares**.
 
-![Población inicial 900](poblacion_900.png)
-
+<p align="center">
+  <img src="img/poblacion_900.png" alt="Población inicial 900" width="400"/>
+</p>
 
 ```python
 import numpy as np
