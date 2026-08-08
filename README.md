@@ -421,6 +421,6 @@ Análisis numérico y campo de direcciones del modelo de crecimiento poblacional
 
 
 ### Puntos de Equilibrio:
-* **$P = 100$ ($K$ - Capacidad de carga):** **Estable** (Atractor). Todas las soluciones con $P_0 > 0$ tienden hacia esta capacidad límite a medida que el tiempo $t$ avanza.
-* **$P = 0$:** **Inestable** (Repulsor). Las poblaciones cercanas a cero crecen alejándose de este punto.
+* $P = 100$ ($K$ - Capacidad de carga): Estable (Atractor). Todas las soluciones con $P_0 > 0$ tienden hacia esta capacidad límite a medida que el tiempo $t$ avanza.
+* $P = 0$: Inestable (Repulsor). Las poblaciones cercanas a cero crecen alejándose de este punto.
 
