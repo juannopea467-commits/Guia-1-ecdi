@@ -163,7 +163,7 @@ graficar(lambda x,y: x*np.exp(y), cond_inicial=(0,0), titulo="e) y' = x e^y")
 graficar(lambda x,y: x - y, cond_inicial=(1,1), titulo="f) y' = x - y")
 ```
 
----
+
 
 ## Punto 2: Campos de Direcciones y Estabilidad
 
