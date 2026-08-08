@@ -424,7 +424,7 @@ Análisis numérico y campo de direcciones del modelo de crecimiento poblacional
 
 
 
-## Punto 4: Análisis del Modelo Poblacional
+
 
 ### a) 
 Para entender la dinámica de la población, primero tomamos la ecuación diferencial autónoma $\frac{dP}{dt} = P(3 - 2P)$ e igualamos la derivada a cero para encontrar los puntos de equilibrio:
@@ -485,3 +485,59 @@ Analizando la constante de crecimiento $k = 0.6 - \frac{s}{250}$ del modelo dire
 * Si $s < 150$ muertes/trimestre: Los nacimientos superan a las muertes ($k > 0$), por lo que la población crecerá de forma lineal sin límite hacia el infinito.
 * Si $s = 150$ muertes/trimestre: Nacimientos y muertes se igualan ($k = 0$), manteniendo la población estancada en su nivel inicial $P_0$.
 * Si $s > 150$ muertes/trimestre: La mortalidad supera a la natalidad ($k < 0$), provocando que la población decrezca progresivamente hasta extinguirse ($P(t) \to 0$).
+
+```python
+import sys, site
+
+
+sys.path.append(site.getusersitepackages())
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+from scipy.integrate import solve_ivp
+
+# Definicion del modelo poblacional dP/dt = 3P - 2P^2
+def dP_dt(t, P):
+    return 3*P - 2*P**2
+
+# Configuracion de la figura
+fig, ax = plt.subplots(figsize=(9, 6))
+
+t_span = (0, 3)
+t_eval = np.linspace(0, 3, 200)
+
+# Graficar campo de pendientes
+t_grid = np.linspace(0, 3, 15)
+P_grid = np.linspace(0, 2.5, 15)
+T, P_m = np.meshgrid(t_grid, P_grid)
+SLOPE = dP_dt(0, P_m)
+NORM = np.sqrt(1 + SLOPE**2)
+ax.quiver(T, P_m, 1/NORM, SLOPE/NORM, color='lightgray', alpha=0.8)
+
+# Condiciones iniciales de los incisos b, c y d
+inits = {
+    'b) P(0) = 2.0 (2000 ej.)': (2.0, 'crimson'),
+    'c) P(0) = 0.1 (100 ej.)': (0.1, 'darkgreen'),
+    'd) P(0) = 1.5 (1500 ej. - Equilibrio)': (1.5, 'navy')
+}
+
+for label, (P0, color) in inits.items():
+    sol = solve_ivp(dP_dt, t_span, [P0], t_eval=t_eval)
+    ax.plot(sol.t, sol.y[0], label=label, color=color, linewidth=2.5)
+
+# Linea de equilibrio P = 1.5
+ax.axhline(1.5, color='black', linestyle='--', alpha=0.7, label='Equilibrio P = 1.5 (1500 ej.)')
+
+ax.set_title('Comportamiento Poblacional: dP/dt = 3P - 2P²', fontsize=12, fontweight='bold')
+ax.set_xlabel('Tiempo t (años)')
+ax.set_ylabel('Población P (en miles)')
+ax.set_ylim(-0.1, 2.5)
+ax.legend(loc='lower right')
+ax.grid(True, linestyle='--', alpha=0.5)
+
+plt.tight_layout()
+plt.savefig('Figure_2.png', dpi=300)
+plt.show()
+```
+
