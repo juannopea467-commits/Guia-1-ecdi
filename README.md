@@ -169,7 +169,7 @@ graficar(lambda x,y: x - y, cond_inicial=(1,1), titulo="f) y' = x - y")
 
 Análisis de estabilidad para las ecuaciones diferenciales autónomas:
 
-![Análisis de Puntos Críticos](Figure_1.png)
+![Análisis de Puntos Críticos y Campos de Direcciones del Punto 2](Figure_1.png)
 
 ### Resumen de Puntos de Equilibrio:
 * **a) $\frac{dy}{dx} = y(3-y)(y-2)$** $\rightarrow$ $y = 3$ (Estable), $y = 2$ (Inestable), $y = 0$ (Estable)
