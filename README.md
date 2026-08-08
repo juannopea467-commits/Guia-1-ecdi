@@ -426,7 +426,7 @@ Análisis numérico y campo de direcciones del modelo de crecimiento poblacional
 
 ## Punto 4: Análisis del Modelo Poblacional
 
-### a) Análisis del diagrama de fase
+### a) 
 Para entender la dinámica de la población, primero tomamos la ecuación diferencial autónoma $\frac{dP}{dt} = P(3 - 2P)$ e igualamos la derivada a cero para encontrar los puntos de equilibrio:
 
 $$P(3 - 2P) = 0 \implies P = 0 \quad \text{y} \quad P = 1.5$$
@@ -440,7 +440,7 @@ Con esto clasificamos los puntos críticos: $P = 0$ funciona como un punto inest
 
 
 
-### b) Análisis con una población inicial de 2000 ejemplares
+### b) 
 Si comenzamos con 2000 ejemplares, tenemos la condición inicial $P(0) = 2.0$. Como este valor es mayor al punto de equilibrio ($2.0 > 1.5$), nos ubicamos en la zona donde la tasa de cambio es negativa. 
 
 Por lo tanto, la población empezará a reducirse de forma constante hasta estabilizarse en los 1500 ejemplares:
@@ -449,7 +449,7 @@ $$\lim_{t \to \infty} P(t) = 1.5 \quad \text{(1500 ejemplares)}$$
 
 
 
-### c) Análisis con una población inicial de 100 especímenes
+### c) 
 Con una población inicial de 100 especímenes ($P(0) = 0.1$), nos encontramos en el intervalo $(0, 1.5)$, donde la derivada es positiva. 
 
 En este caso ocurre lo contrario al punto anterior: la población comenzará a multiplicarse y crecer hasta alcanzar nuevamente la capacidad de equilibrio en los 1500 ejemplares:
@@ -458,12 +458,12 @@ $$\lim_{t \to \infty} P(t) = 1.5 \quad \text{(1500 ejemplares)}$$
 
 
 
-### d) ¿Qué ocurre exactamente con una población de 1500 ejemplares?
+### d) 
 Cuando la población llega a 1500 ejemplares ($P = 1.5$), alcanzamos la solución de equilibrio estable. En este valor la tasa de variación es exactamente cero ($\frac{dP}{dt} = 0$), lo que significa que el número de nacimientos y muertes se compensa por completo. La población dejará de cambiar y se mantendrá constante de forma indefinida ($P(t) = 1.5$ para todo $t \ge 0$).
 
 
 
-### e) Construcción de la ecuación diferencial anual
+### e) 
 Para llevar las tasas trimestrales a una escala anual, multiplicamos los datos por $4$ trimestres:
 
 * Nacimientos al año: $4 \times 0.150 = 0.600$ miles/año.
@@ -479,7 +479,7 @@ A partir de esto, podemos plantear el modelo de dos formas según el enfoque:
 
 
 
-### f) Comportamiento según la tasa de mortalidad ($s$)
+### f)
 Analizando la constante de crecimiento $k = 0.6 - \frac{s}{250}$ del modelo directo, el futuro de la población dependerá del valor de $s$:
 
 * Si $s < 150$ muertes/trimestre: Los nacimientos superan a las muertes ($k > 0$), por lo que la población crecerá de forma lineal sin límite hacia el infinito.
