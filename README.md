@@ -411,7 +411,7 @@ if __name__ == "__main__":
     simular(0.9, "poblacion_900.png")
 
 ```
----
+
 
 ## Punto 4: Modelo Poblacional 
 
@@ -420,9 +420,9 @@ Análisis numérico y campo de direcciones del modelo de crecimiento poblacional
 ![Análisis punto 4](Figure_2.png)
 
 
----
 
----
+
+
 
 ## Punto 4: Análisis del Modelo Poblacional
 
@@ -438,7 +438,7 @@ Como la variable $P$ está expresada en miles, $P = 1.5$ equivale a 1500 ejempla
 
 Con esto clasificamos los puntos críticos: $P = 0$ funciona como un punto inestable (repulsor), mientras que $P = 1.5$ es un punto asintóticamente estable (atractor). Esto nos confirma que cualquier población inicial positiva ($P_0 > 0$) terminará acercándose con el tiempo a los 1500 ejemplares.
 
----
+
 
 ### b) Análisis con una población inicial de 2000 ejemplares
 Si comenzamos con 2000 ejemplares, tenemos la condición inicial $P(0) = 2.0$. Como este valor es mayor al punto de equilibrio ($2.0 > 1.5$), nos ubicamos en la zona donde la tasa de cambio es negativa. 
@@ -447,7 +447,7 @@ Por lo tanto, la población empezará a reducirse de forma constante hasta estab
 
 $$\lim_{t \to \infty} P(t) = 1.5 \quad \text{(1500 ejemplares)}$$
 
----
+
 
 ### c) Análisis con una población inicial de 100 especímenes
 Con una población inicial de 100 especímenes ($P(0) = 0.1$), nos encontramos en el intervalo $(0, 1.5)$, donde la derivada es positiva. 
@@ -456,12 +456,12 @@ En este caso ocurre lo contrario al punto anterior: la población comenzará a m
 
 $$\lim_{t \to \infty} P(t) = 1.5 \quad \text{(1500 ejemplares)}$$
 
----
+
 
 ### d) ¿Qué ocurre exactamente con una población de 1500 ejemplares?
 Cuando la población llega a 1500 ejemplares ($P = 1.5$), alcanzamos la solución de equilibrio estable. En este valor la tasa de variación es exactamente cero ($\frac{dP}{dt} = 0$), lo que significa que el número de nacimientos y muertes se compensa por completo. La población dejará de cambiar y se mantendrá constante de forma indefinida ($P(t) = 1.5$ para todo $t \ge 0$).
 
----
+
 
 ### e) Construcción de la ecuación diferencial anual
 Para llevar las tasas trimestrales a una escala anual, multiplicamos los datos por $4$ trimestres:
@@ -477,7 +477,7 @@ A partir de esto, podemos plantear el modelo de dos formas según el enfoque:
 2. Modelo logístico modificado (sumando el ajuste de tasas):
    $$\frac{dP}{dt} = 3P - 2P^2 + 0.6 - \frac{s}{250}$$
 
----
+
 
 ### f) Comportamiento según la tasa de mortalidad ($s$)
 Analizando la constante de crecimiento $k = 0.6 - \frac{s}{250}$ del modelo directo, el futuro de la población dependerá del valor de $s$:
