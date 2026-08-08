@@ -420,7 +420,66 @@ Análisis numérico y campo de direcciones del modelo de crecimiento poblacional
 ![Análisis punto 4](Figure_2.png)
 
 
-### Puntos de Equilibrio:
-* $P = 100$ ($K$ - Capacidad de carga): Estable (Atractor). Todas las soluciones con $P_0 > 0$ tienden hacia esta capacidad límite a medida que el tiempo $t$ avanza.
-* $P = 0$: Inestable (Repulsor). Las poblaciones cercanas a cero crecen alejándose de este punto.
+---
+
+## 📈 Punto 4: Análisis del Modelo Poblacional y Diagrama de Fase
+
+### a) Análisis del Diagrama de Fase
+Ecuación diferencial autónoma:
+$$\frac{dP}{dt} = P(3 - 2P)$$
+
+* **Puntos Críticos (Equilibrio):**
+  $$P(3 - 2P) = 0 \implies P = 0 \quad \text{y} \quad P = 1.5 \text{ (en miles, es decir, 1500 ejemplares)}$$
+
+* **Análisis de Estabilidad ($P \ge 0$):**
+  * **Intervalo $(0, 1.5)$:** $\frac{dP}{dt} > 0 \implies P(t)$ crece ($\uparrow$).
+  * **Intervalo $(1.5, \infty)$:** $\frac{dP}{dt} < 0 \implies P(t)$ decrece ($\downarrow$).
+
+* **Clasificación:**
+  * $P = 0$: **Punto crítico inestable** (repulsor).
+  * $P = 1.5$: **Punto crítico asintóticamente estable** (atractor).
+  * Para cualquier población inicial positiva $P_0 > 0$, la población tenderá con el tiempo a $1.5$ miles ($1500$ ejemplares).
+
+---
+
+### b) Comportamiento con Población Inicial de 2000 Ejemplares
+* **Condición inicial:** $P(0) = 2.0$ (en miles).
+* Como $2.0 > 1.5$, la condición inicial está en la región donde $\frac{dP}{dt} < 0$.
+* La población decrece de forma monótona hasta estabilizarse asintóticamente en $1.5$ miles de ejemplares ($1500$ ejemplares):
+  $$\lim_{t \to \infty} P(t) = 1.5 \quad \text{(1500 ejemplares)}$$
+
+---
+
+### c) Comportamiento con Población Inicial de 100 Especímenes
+* **Condición inicial:** $P(0) = 0.1$ (en miles).
+* Como $0.1 \in (0, 1.5)$, la condición inicial se encuentra en la región donde $\frac{dP}{dt} > 0$.
+* La población crece de forma monótona hasta alcanzar el equilibrio en $1.5$ miles de ejemplares ($1500$ ejemplares):
+  $$\lim_{t \to \infty} P(t) = 1.5 \quad \text{(1500 ejemplares)}$$
+
+---
+
+### d) Interpretación de una Población de 1500 Ejemplares
+$1500$ ejemplares ($P = 1.5$) representa la **solución de equilibrio estable (atractor)** de la ecuación diferencial. En este punto:
+* La tasa de cambio es nula ($\frac{dP}{dt} = 0$).
+* La población permanece constante indefinidamente en el tiempo ($P(t) = 1.5$ para todo $t \ge 0$).
+
+---
+
+### e) Construcción de la Ecuación Diferencial Anual
+* **Nacimientos anuales:** $4 \times 0.150 \text{ miles/trimestre} = 0.600 \text{ miles/año}$.
+* **Muertes anuales:** $4 \times \frac{s}{1000} \text{ miles/trimestre} = \frac{s}{250} \text{ miles/año}$.
+
+**Modelo Directo (Tasa constante):**
+$$\frac{dP}{dt} = 0.6 - \frac{s}{250}$$
+
+**Modelo Combinado (Modificación al modelo logístico base):**
+$$\frac{dP}{dt} = 3P - 2P^2 + 0.6 - \frac{s}{250}$$
+
+---
+
+### f) Análisis del Comportamiento según la Tasa de Muertes ($s$)
+Para el modelo directo $\frac{dP}{dt} = k = 0.6 - \frac{s}{250}$:
+* **Si $s < 150$ muertes/trimestre:** $k > 0$, la población crece linealmente sin límite ($P(t) \to \infty$).
+* **Si $s = 150$ muertes/trimestre:** $k = 0$, la población se mantiene constante en su nivel inicial ($P(t) = P_0$).
+* **Si $s > 150$ muertes/trimestre:** $k < 0$, la población decrece linealmente hasta extinguirse ($P(t) \to 0$).
 
